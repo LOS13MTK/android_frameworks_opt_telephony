@@ -875,8 +875,8 @@ public class SIMRecords extends IccRecords {
 
                 if (ar.exception != null) {
                     mIccId = FAKE_ICCID;
- +                }
- +                else {
+                }
+                else {
                     mIccId = IccUtils.bcdToString(data, 0, data.length);
                 }
 
